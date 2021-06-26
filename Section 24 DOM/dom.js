@@ -52,12 +52,23 @@ sp.forEach((sp, i) => {
 
 // Coding Exercise 57:
 //----------------------
+const list = document.querySelectorAll('li');
 
+for (let items of list) {
+    items.classList.toggle('highlight');
+}
 
 /**************************************************************/
 
 // Coding Exercise 58:
 //----------------------
+const divParent = document.querySelector('div'); 
+
+for (let i=0; i < 100; i++){
+    let newBtn = document.createElement('button');
+    newBtn.innerText = 'Hey!';
+    divParent.appendChild(newBtn);
+}
 
 
 
